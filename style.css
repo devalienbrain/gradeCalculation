@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.one-column {
+  margin-top: 5%;
+  background-color: lightcyan;
+  border: 1px solid lightblue;
+  padding: 4%;
+}
+
+.form-field {
+  padding: 5%;
+  border: 2px solid black;
+  margin-bottom: 2%;
+  border-radius: 5%;
+}
+
+.table-field {
+  color: red;
+  padding: 5%;
+  background-color: lightgreen;
+  border: none;
+  text-align: center;
+  border-radius: 5%;
+}
+
+table,
+th,
+td {
+  border: 2px solid white;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}

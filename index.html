@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1>Grade calculation</h1>
+      <div class="one-column">
+        <div class="form-field">
+          <h4>
+            Input obtained marks (Marks within 100)
+          </h4>
+          <form action="">
+            <p>
+              Student Name & Roll:
+            <p>
+              <input id="nameId" type="text" placeholder="input name">
+            </p>
+            <p>
+              <input id="rollId" type="text" placeholder="input roll number">
+            </p>
+            </p>
+            <p>
+              ENGLISH =
+              <input id="numberEnglish" type="number" placeholder="marks">
+            </p>
+            <p>
+              PHYSICS =
+              <input id="numberPhysics" type="number" placeholder="marks">
+            </p>
+            <p>
+              CHEMISTRY =
+              <input id="numberChemistry" type="number" placeholder="marks">
+            </p>
+            <p>
+              BIOLOGY =
+              <input id="numberBiology" type="number" placeholder="marks">
+            </p>
+            <p>
+              MATH&IT =
+              <input id="numberMathIt" type="number" placeholder="marks">
+            </p>
+          </form>
+          <p>
+            <button id="submitButton" type="button" class="btn btn-success">Submit</button>
+          </p>
+        </div>
+        <div class="table-field">
+          <h3>
+            Final result with grade
+          </h3>
+          <h3>Name: <strong id="showName"></strong> </h3>
+          <h3>Roll: <strong id="showRoll"></strong></h3>
+
+          <table>
+            <tr>
+              <th>
+                Subject
+              </th>
+              <th>
+                marks
+              </th>
+            </tr>
+            <tr>
+              <td>ENGLISH</td>
+              <td><strong id="showNumEng"></strong></td>
+            </tr>
+
+            <tr>
+              <td>PHYSICS</td>
+              <td><strong id="showNumPhy"></strong></td>
+            </tr>
+
+            <tr>
+              <td>CHEMISTRY</td>
+              <td><strong id="showNumChe"></strong></td>
+            </tr>
+            <tr>
+              <td>BIOLOGY</td>
+              <td><strong id="showNumBio"></strong></td>
+            </tr>
+            <tr>
+              <td>MATH&IT</td>
+              <td><strong id="showNumMathIt"></strong></td>
+            </tr>
+
+            <tr>
+              <td>Total</td>
+              <td><strong id="showNumTotal"></strong></td>
+            </tr>
+          </table>
+          <h4>Average Marks = <strong id="showAvg"></strong> </h4>
+          <h2>Obtained Result = <strong id="showRes"></strong> </h2>
+          <h2>Obtained Grade = <strong id="showGrade"></strong> </h2>
+          <p>
+            [Marks less than 33 => Grade 'F'; 33+ => D; 50+ => C; 60+ => B; 70+ => A; 80+ => A+; 90+ => A++;]
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <script src="gradeCalculator.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </script>
+</body>
+
+</html>
